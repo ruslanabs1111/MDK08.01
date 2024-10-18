@@ -1,4 +1,4 @@
-function getGeneration() {
+function getInfo() {
     const model = document.getElementById('model').value.toLowerCase();
     let generationInfo = '';
 
@@ -34,5 +34,7 @@ function getGeneration() {
             generationInfo = 'Информация о модели не найдена.';
     }
 
-    document.getElementById('result').innerText = generationInfo;
+    const authorInfo = 'Автор сайта: Абсалямов Р.Р.';
+    // Объединяем информацию об ЭВМ и авторе
+    document.getElementById('result').innerText = generationInfo + '\n\n' + authorInfo;
 }
