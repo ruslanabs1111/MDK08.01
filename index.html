@@ -3,18 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поколения компьютеров</title>
-<link rel="stylesheet" href="styles/style.css">
+    <title>Поколения ЭВМ</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Определение поколения компьютера</h1>
-    <label for="model">Введите модель компьютера:</label>
-    <input type="text" id="model" placeholder="Например: ENIAC, IBM 1401">
-    <button onclick="getInfo()">Узнать информацию</button>
 
-    <h2 id="result"></h2>
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/1.jpg" alt="Первое поколение ЭВМ">
+            <div class="info">
+                <h2>Первое поколение ЭВМ</h2>
+                <p>Годы использования: 1940-1956</p>
+                <p>Элементная база: Вакуумные лампы</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/2.jpg" alt="Второе поколение ЭВМ">
+            <div class="info">
+                <h2>Второе поколение ЭВМ</h2>
+                <p>Годы использования: 1956-1963</p>
+                <p>Элементная база: Транзисторы</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/3.jpg" alt="Третье поколение ЭВМ">
+            <div class="info">
+                <h2>Третье поколение ЭВМ</h2>
+                <p>Годы использования: 1964-1971</p>
+                <p>Элементная база: Интегральные схемы</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/4.jpg" alt="Четвертое поколение ЭВМ">
+            <div class="info">
+                <h2>Четвертое поколение ЭВМ</h2>
+                <p>Годы использования: 1971-1980</p>
+                <p>Элементная база: Микропроцессоры</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/5.jpg" alt="Пятое поколение ЭВМ">
+            <div class="info">
+                <h2>Пятое поколение ЭВМ</h2>
+                <p>Годы использования: 1980-настоящее время</p>
+                <p>Элементная база: Искусственный интеллект</p>
+            </div>
+        </div>
+    </div>
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+</div>
 
-    <script src="scripts/script.js">
-    </script>
+
+<script src="scripts/script.js"></script>
 </body>
 </html>
